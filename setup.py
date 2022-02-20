@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
 	name="imgcompr",
-	version='1.2',
+	version='1.3',
   description='画像圧縮ツール',
   author='Ito Naoki',
   author_email='so30.itonaoki@gmail.com',
