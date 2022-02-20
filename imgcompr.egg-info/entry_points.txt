@@ -1,3 +1,0 @@
-[console_scripts]
-imgcompr = imgcompr.cli:execute
-
