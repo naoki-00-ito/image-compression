@@ -1,0 +1,10 @@
+README.md
+setup.py
+imgcompr/__init__.py
+imgcompr/cli.py
+imgcompr/imgcompr.py
+imgcompr.egg-info/PKG-INFO
+imgcompr.egg-info/SOURCES.txt
+imgcompr.egg-info/dependency_links.txt
+imgcompr.egg-info/entry_points.txt
+imgcompr.egg-info/top_level.txt
