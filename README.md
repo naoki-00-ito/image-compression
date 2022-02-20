@@ -5,13 +5,16 @@
 ## Python 環境構築
 Mac https://prog-8.com/docs/python-env
 
-### `pyenv install 3.6.5` でエラーが出る場合
+### トラブルシュート
 
+#### ① `pyenv install 3.6.5` でエラーが出る
+
+下記エラーが出る。。
 ```
 xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
 ```  
 
-このエラーが出た場合は下記コマンドで xcode を所定位置にインストール  
+xcode を所定位置にインストール 
 ```
 xcode-select --install
 ```
@@ -34,3 +37,32 @@ pyenv install --patch 3.6.5 < <(curl -sSL https://github.com/python/cpython/comm
 - https://qiita.com/nishina555/items/e23d73067a5cac182a63
 - https://qiita.com/Butterthon/items/e7d1f379c828b41f3e19
 - https://harucharuru.hatenablog.com/entry/2020/11/16/205232
+
+#### ② `pyenv global 3.6.5` で切り替えができない
+
+デフォルトシェルを確認
+```
+echo $SHELL
+```
+
+設定ファイルを開く
+```
+open ~/.zshrc
+```
+
+下記記述を確認
+```
+export PATH="$PYENV_ROOT/bin:$PATH"
+```
+
+`{bin}`を`{shims}`に変更
+```
+export PATH="$PYENV_ROOT/shims:$PATH"
+```
+
+Pathを通す
+```
+source ~/.zshrc
+```
+
+参考: https://hitori-sekai.com/python/error-pyenv/
