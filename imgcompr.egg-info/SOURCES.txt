@@ -1,4 +1,6 @@
+MANIFEST.in
 README.md
+requirements.txt
 setup.py
 imgcompr/__init__.py
 imgcompr/cli.py
@@ -7,4 +9,5 @@ imgcompr.egg-info/PKG-INFO
 imgcompr.egg-info/SOURCES.txt
 imgcompr.egg-info/dependency_links.txt
 imgcompr.egg-info/entry_points.txt
+imgcompr.egg-info/requires.txt
 imgcompr.egg-info/top_level.txt
