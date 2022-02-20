@@ -3,9 +3,10 @@
 
 
 ## Python 環境構築
-Mac https://prog-8.com/docs/python-env
+Mac: https://prog-8.com/docs/python-env  
+Windows: https://prog-8.com/docs/python-env-win
 
-### トラブルシュート
+### トラブルシュート(Mac)
 
 #### ① `pyenv install 3.6.5` でエラーが出る
 
