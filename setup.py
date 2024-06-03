@@ -4,9 +4,8 @@ setup(
 	name="imgcompr",
 	version='1.3',
   description='画像圧縮ツール',
-  author='Ito Naoki',
-  author_email='so30.itonaoki@gmail.com',
-  url='https://github.com/ItoNaoki/image-compression',
+  author='Naoki Ito',
+  url='https://github.com/naoki-00-ito/image-compression',
   packages=find_packages(),
   entry_points={
     'console_scripts':[
